@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient">
+
+    <TextView
+        android:layout_marginTop="120dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:textSize="25dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:id="@+id/create_profile"
+        android:text="Создание профиля"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginRight="35dp"
+        android:background="@drawable/edittext_style"
+        android:textColorHint="#ffffff"
+        android:hint="Введите своё имя"
+        android:paddingLeft="25dp"
+        android:singleLine="true"
+        android:id="@+id/name"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="35dp"
+        android:background="@drawable/edittext_style"
+        android:textColorHint="#ffffff"
+        android:hint="Введите свой возраст"
+        android:inputType="number"
+        android:paddingLeft="25dp"
+        android:singleLine="true"
+        android:id="@+id/age"/>
+
+    <Spinner
+        android:id="@+id/genre_selector"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="35dp"
+        android:background="@drawable/edittext_style"
+        android:entries="@array/genres"
+        android:paddingLeft="20dp"
+        android:popupBackground="@drawable/edittext_style"
+        android:spinnerMode="dropdown" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="1">
+    <Button
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="60dp"
+        android:layout_centerInParent="true"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/save"
+        android:id="@+id/save"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

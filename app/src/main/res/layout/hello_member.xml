@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/hello_member"
+    android:background="@drawable/gradient">
+
+    <com.example.kinostar.ScreenPager
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:id="@+id/pager">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:src="@drawable/popcorn"
+            android:layout_gravity="center"
+            android:layout_marginTop="75dp"/>
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:textSize="25dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Дополняйте список просмотренных фильмов"/>
+
+            <TextView
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:textColor="#ffffff"
+                android:textSize="20dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="С помощью этого списка мы сможем рекомендовать вам наиболее подходящие и интересные фильмы и сериалы"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="200dp"
+                android:src="@drawable/rank_main"
+                android:layout_gravity="center"
+                android:layout_marginTop="55dp"/>
+            <TextView
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:textSize="25dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="Повышайте свой уровень"/>
+
+            <TextView
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:textColor="#ffffff"
+                android:textSize="20dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="С каждым просмотренным и добавленным в список фильмом зарабатывайте очки опыта"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="180dp"
+                android:layout_height="180dp"
+                android:src="@drawable/search_main"
+                android:layout_gravity="center"
+                android:layout_marginTop="75dp"/>
+
+            <TextView
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:textSize="25dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="Ищите фильмы"/>
+
+            <TextView
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:textColor="#ffffff"
+                android:textSize="20dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="Следите за самыми популярными фильмами и сериалами, просматривайте подборки или просто воспользуйтесь удобным поиском"/>
+
+        </LinearLayout>
+
+    </com.example.kinostar.ScreenPager>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:layout_marginBottom="20dp">
+
+        <ImageView
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_marginRight="10dp"
+            android:id="@+id/first"
+            android:src="@drawable/gray_circle"/>
+        <ImageView
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_marginRight="10dp"
+            android:id="@+id/second"
+            android:src="@drawable/gray_circle"/>
+        <ImageView
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:id="@+id/third"
+            android:src="@drawable/gray_circle"/>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="340dp"
+        android:layout_height="50dp"
+        android:background="@drawable/start_three"
+        android:layout_gravity="center"
+        android:layout_marginBottom="60dp"
+        android:id="@+id/start" />
+
+
+</LinearLayout>

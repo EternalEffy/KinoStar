@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="200px"
+        android:layout_height="270px"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="4px"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="1">
+    <TextView
+        android:id="@+id/label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:textColor="#ffffff"
+        android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:id="@+id/descrip"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:textColor="#ffffff"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="6dp"
+            android:textSize="14dp"
+            android:layout_marginBottom="5dp"/>
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_marginTop="8dp"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:id="@+id/circle_score"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:layout_marginLeft="5dp"
+            android:id="@+id/film_score"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:textSize="13dp"/>
+
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>
